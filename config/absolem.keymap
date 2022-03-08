@@ -107,11 +107,12 @@
 
                 default_layer {
                         bindings = <
-         &none  &kp Q &kp W &kp E &kp R &kp T 				&kp Y &kp U  &kp I &kp O   &kp P &none
-	 &none  &kp A &kp S &kp D &kp F &kp G 			        &kp H &kp J  &kp K &kp L   &kp SQT &none
-	 &none  &mt LSFT Z &kp X &kp C &kp V &kp B			&kp N &kp M  &kp CMMA &kp DOT &mt LSFT FSLH &none
+   &kp Q &kp W &kp E &kp R &kp T 				&kp Y &kp U  &kp I &kp O   &kp P
+	 &kp A &kp S &kp D &kp F &kp G 			        &kp H &kp J  &kp K &kp L   &kp SQT
+	 &mt LSFT Z &kp X &kp C &kp V &kp B			&kp N &kp M  &kp CMMA &kp DOT &mt LSFT FSLH
           	&kp SPC	&lt 1 SPC &kp LCTL  				&kp TAB &lt 2 BSPC &kp BSPC
-   /*&none &kp Q      &kp W      &kp E       &kp R        &kp T         &kp Y         &kp U        &kp I        &kp O      &kp P         &none
+  
+	/*&none &kp Q      &kp W      &kp E       &kp R        &kp T         &kp Y         &kp U        &kp I        &kp O      &kp P         &none
    &none &mt LCMD A &mt RALT S &mt LCTRL D &mt LSHFT F  &kp G         &kp H         &mt RSHFT J  &mt RCTRL K  &mt RALT L &mt RCMD SEMI &none
    &none &kp Z      &mt LALT X &kp C       &kp V        &kp B         &kp N         &kp M        &kp COMMA    &kp DOT    &kp FSLH      &none
                                &lt RSE ESC &lt LWR QUOT &kp SPACE     &mt RSHFT RET &lt RSE BSPC &lt LWR TAB*/
@@ -119,11 +120,12 @@
                 };
                 lower_layer {
                         bindings = <
-          &none &kp GRAVE &kp F2      &kp F3    &kp F4    &kp F5		    &kp ASTRK &kp NUM_7  &kp NUM_8 &kp NUM_9 &kp BSPC &none 
-	  &none &kp F6    &kp F7      &kp F8    &kp F9    &kp F10 		  &kp MINUS &kp NUM_4  &kp NUM_5 &kp NUM_6 &kp PLUS &none  
-	  &none &kp F1    &kp TILDE 	&kp TILDE &kp F11   &kp F12 	    &kp NUM_0 &kp NUM_1  &kp NUM_2 &kp NUM_3  &kp DEL &none 
-			&none  &mo 1  &kp LGUI  					&kp RGUI &mo 2 &none 
-   /*&none &kp N1   &kp N2   &kp N3      &kp N4       &kp N5        &kp N6   &kp N7         &kp N8       &kp N9         &kp N0     &none
+&kp GRAVE &kp F2      &kp F3    &kp F4    &kp F5		    &kp ASTRK &kp NUM_7  &kp NUM_8 &kp NUM_9 &kp BSPC
+&kp F6    &kp F7      &kp F8    &kp F9    &kp F10 		  &kp MINUS &kp NUM_4  &kp NUM_5 &kp NUM_6 &kp PLUS
+&kp F1    &kp TILDE 	&kp TILDE &kp F11   &kp F12 	    &kp NUM_0 &kp NUM_1  &kp NUM_2 &kp NUM_3  &kp DEL
+												&none  &mo 1  &kp LGUI  					&kp RGUI &mo 2 &none 
+ 
+ /*&none &kp N1   &kp N2   &kp N3      &kp N4       &kp N5        &kp N6   &kp N7         &kp N8       &kp N9         &kp N0     &none
    &none &kp LCMD &kp RALT &kp LCTRL   &kp LSHFT    &none         &kp LEFT &mt RSHFT DOWN &mt RCTRL UP &mt RALT RIGHT &kp RCMD   &none
    &none &none    &kp LALT &none       &kp Y        &none         &kp HOME &kp PG_DN      &kp PG_UP    &mt LALT END   &caps_word &none
                            &lt RSE ESC &lt LWR QUOT &kp SPACE     &mt RSHFT RET &mo RSE &lt LWR TAB*/
@@ -131,11 +133,12 @@
                 };
                 raise_layer {
                         bindings = <
-          &none &kp EXCL  &kp AT &kp HASH  &kp DLLR  &kp PRCNT    			&kp CARET  &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &none
-	  &none	&kp LBKT  &kp RBKT  &kp LBRC &kp RBRC &kp PIPE                          &kp LEFT &kp DOWN  &kp UP  &kp RIGHT   &kp BSPC &none
-	  &none	&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp QMARK &kp EQUAL &kp PIPE &kp MINUS  &kp UNDER &none
-					&none  &mo 3 &kp LCTL  				&kp SPC  &mo 2 &none
-   /*&none &kp EXCL    &kp AT      &kp HASH     &kp DLLR     &kp PRCNT       &kp CARET     &kp AMPS        &kp KP_MULTIPLY &kp LPAR      &kp RPAR      &none
+&kp EXCL  &kp AT &kp HASH  &kp DLLR  &kp PRCNT    			&kp CARET  &kp AMPS &kp ASTRK &kp LPAR &kp RPAR
+&kp LBKT  &kp RBKT  &kp LBRC &kp RBRC &kp PIPE          &kp LEFT &kp DOWN  &kp UP  &kp RIGHT   &kp BSPC
+&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp QMARK &kp EQUAL &kp PIPE &kp MINUS  &kp UNDER
+														&none  &mo 3 &kp LCTL  				&kp SPC  &mo 2 &none
+
+/*&none &kp EXCL    &kp AT      &kp HASH     &kp DLLR     &kp PRCNT       &kp CARET     &kp AMPS        &kp KP_MULTIPLY &kp LPAR      &kp RPAR      &none
    &none &mt LCMD F1 &mt RALT F2 &mt LCTRL F3 &mt LSHFT F4 &kp F5          &kp MINUS     &mt RSHFT EQUAL &mt RCTRL LBKT  &mt RALT RBKT &mt RCMD BSLH &none
    &none &kp F6      &mt LALT F7 &kp F8       &kp F9       &kp F10         &kp UNDER     &kp PLUS        &kp LBRC        &kp RBRC      &kp PIPE      &none
                                  &lt RSE ESC  &mo LWR      &kp GRAVE       &mt RSHFT RET &lt RSE BSPC    &lt LWR TAB*/
@@ -143,11 +146,12 @@
                 };
                 adjust_layer {
                         bindings = <
-          &none &kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans &none
-  	  &none	&kp F1 &kp F2 &kp F3 &bt BT_NXT &bt BT_PRV  				        &trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans &none
-	  &none	&bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   &none
+&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
+&kp F1 &kp F2 &kp F3 &bt BT_NXT &bt BT_PRV  				        &trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans
+&bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans
 				    &none &trans &trans  					&trans &trans &none
-   /*&none &bt BT_CLR   &none        &none        &none        &none            &none           &kp K_MUTE   &none &none &bootloader &none
+
+/*&none &bt BT_CLR   &none        &none        &none        &none            &none           &kp K_MUTE   &none &none &bootloader &none
    &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp C_BRI_UP    &kp C_VOL_UP &none &none &reset      &none
    &none &none        &none        &none        &none        &none            &kp C_BRI_DN    &kp C_VOL_DN &none &none &none       &none
                                    &none        &none        &none            &none           &none        &none*/
